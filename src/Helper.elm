@@ -1,7 +1,6 @@
 module Helper exposing (..)
 import Html exposing (Html, div, h1, li, text, ul)
 
-
 add2 : Int -> Int -> Int
 add2 int1 int2 =
     int1 + int2
