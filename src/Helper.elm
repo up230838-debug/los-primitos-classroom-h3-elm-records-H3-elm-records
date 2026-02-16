@@ -1,5 +1,12 @@
-module Helper exposing (..)
+module Main exposing (main)
+
 import Html exposing (Html, div, h1, li, text, ul)
+
+
+-- =========================
+-- SIMPLE EXERCISES
+-- =========================
+
 
 add2 : Int -> Int -> Int
 add2 int1 int2 =
@@ -14,6 +21,12 @@ add3 int1 int2 int3 =
 calc : Int -> Int -> (Int -> Int -> Int) -> Int
 calc int1 int2 operator =
     operator int1 int2
+
+
+
+-- =========================
+-- RECORDS EXERCISE 1
+-- =========================
 
 
 type alias ProgrammingLanguage =
@@ -33,6 +46,12 @@ languages =
 languageNames : List ProgrammingLanguage -> List String
 languageNames langs =
     List.map .name langs
+
+
+
+-- =========================
+-- RECORDS EXERCISE 2
+-- =========================
 
 
 type alias User =
@@ -60,6 +79,12 @@ onlyStudents userList =
                 ""
         )
         userList
+
+
+
+-- =========================
+-- ALIAS EXERCISE
+-- =========================
 
 
 type alias Videogame =
@@ -91,6 +116,12 @@ videogames =
 getVideogameGenres : List Videogame -> List (List String)
 getVideogameGenres games =
     List.map .genres games
+
+
+
+-- =========================
+-- HTML EXERCISE
+-- =========================
 
 
 type alias Computer =
